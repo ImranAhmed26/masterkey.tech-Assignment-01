@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import {Banner} from './components/banner'
+import {Banner2} from './components/banner2'
+import {Banner3} from './components/banner3'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='bg-gray-100 flex items-center justify-center'>
+      <div className='max-w-7xl  '>
+        <Banner />
+        <Banner2 />
+        <Banner3 />
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
